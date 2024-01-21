@@ -22,6 +22,10 @@ object LightsFactory {
                     logController("TolinoNTX")
                     TolinoNtxController()
                 }
+                DeviceInfo.LightsDevice.TOLINO_PAGE2 -> {
+                    logController("TolinoNTXNoWarmth")
+                    TolinoNtxNoWarmthController()
+                }
                 DeviceInfo.LightsDevice.ONYX_DARWIN7,
                 DeviceInfo.LightsDevice.ONYX_EDISON,
                 DeviceInfo.LightsDevice.ONYX_FAUST3,
@@ -60,6 +64,10 @@ object LightsFactory {
                 DeviceInfo.LightsDevice.TAGUS_GEA -> {
                     logController("Onyx color")
                     OnyxColorController()
+                }
+                DeviceInfo.LightsDevice.ONYX_TAB_ULTRA_C -> {
+                    logController("Onyx Adb")
+                    OnyxAdbLightsController()
                 }
                 DeviceInfo.LightsDevice.ONYX_C67,
                 DeviceInfo.LightsDevice.ONYX_MAGICBOOK,
